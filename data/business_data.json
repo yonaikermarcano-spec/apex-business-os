@@ -1,0 +1,1348 @@
+{
+  "profile": {
+    "id": "velox-caracas",
+    "name": "VELOX Movilidad Caracas",
+    "tagline": "App de Movilidad Urbana & Red Oficial de Estacionamiento de Motos",
+    "industry": "Transporte & Movilidad Urbana (Ride-Hailing / Micro-Mobility)",
+    "city": "Caracas, Venezuela",
+    "currency": "$",
+    "currencyCode": "USD",
+    "startMonth": 1,
+    "startYear": 2026,
+    "initialCapital": 51000,
+    "projectionHorizonMonths": 6,
+    "granularity": "monthly",
+    "taxRatePct": 0,
+    "activeScenario": "base"
+  },
+  "departments": [
+    {
+      "id": "auditoria",
+      "name": "AUDITORIA",
+      "description": "Órgano supremo de control interno, gobernanza, auditoría contable y resolución ejecutiva",
+      "color": "purple",
+      "level": 0,
+      "leaderRole": "Comité de Auditoría & Junta"
+    },
+    {
+      "id": "technology",
+      "name": "DIRECCIÓN DE TECNOLOGÍA",
+      "parentId": "auditoria",
+      "leaderName": "Hector Samuel",
+      "leaderRole": "Director de Tecnología (CTO)",
+      "description": "Arquitectura web, desarrollo móvil, ciberseguridad, DevOps e inteligencia artificial",
+      "color": "blue",
+      "level": 1
+    },
+    {
+      "id": "commercial",
+      "name": "DIRECCIÓN COMERCIAL",
+      "parentId": "auditoria",
+      "leaderName": "Yonaiker Marcano",
+      "leaderRole": "Director Comercial (CMO)",
+      "description": "Alianzas comerciales, publicidad, mercadeo, administración, finanzas y asesoría legal",
+      "color": "amber",
+      "level": 1
+    },
+    {
+      "id": "operations",
+      "name": "DIRECCIÓN INSTITUCIONAL (FLOTA)",
+      "parentId": "auditoria",
+      "leaderName": "Bladimir Garcia",
+      "leaderRole": "Director Institucional & Flota",
+      "description": "Afiliación de motos y carros, relación gremial con líneas, INTT, alcaldías y paradas",
+      "color": "emerald",
+      "level": 1
+    },
+    {
+      "id": "tech_ciber",
+      "name": "CIBERSEGURIDAD",
+      "parentId": "technology",
+      "color": "blue",
+      "level": 2,
+      "description": "Blindaje de infraestructura, pentesting y protección de datos de usuarios"
+    },
+    {
+      "id": "tech_app",
+      "name": "APP",
+      "parentId": "technology",
+      "color": "blue",
+      "level": 2,
+      "description": "Ecosistema de aplicativos nativos para pasajeros y conductores"
+    },
+    {
+      "id": "tech_app_front",
+      "name": "FRONTEN (APP)",
+      "parentId": "tech_app",
+      "color": "blue",
+      "level": 3,
+      "description": "Interfaz de usuario, UX móvil y reactividad en Android e iOS"
+    },
+    {
+      "id": "tech_app_back",
+      "name": "BACKEND (APP)",
+      "parentId": "tech_app",
+      "color": "blue",
+      "level": 3,
+      "description": "APIs en tiempo real, sockets de geolocalización y despacho de viajes"
+    },
+    {
+      "id": "tech_web",
+      "name": "WEB",
+      "parentId": "technology",
+      "color": "blue",
+      "level": 2,
+      "description": "Portal web administrativo, landing pages y dashboard corporativo"
+    },
+    {
+      "id": "tech_web_front",
+      "name": "FRONTEN (WEB)",
+      "parentId": "tech_web",
+      "color": "blue",
+      "level": 3,
+      "description": "Desarrollo frontend web, panel de control de flota y finanzas"
+    },
+    {
+      "id": "tech_web_back",
+      "name": "BACKEND (WEB)",
+      "parentId": "tech_web",
+      "color": "blue",
+      "level": 3,
+      "description": "Servidores web, microservicios y gestión de reportes analíticos"
+    },
+    {
+      "id": "tech_qa",
+      "name": "CONTROL DE CALIDAD",
+      "parentId": "technology",
+      "color": "blue",
+      "level": 2,
+      "description": "Pruebas de software QA, estrés de carga y homologación de versiones"
+    },
+    {
+      "id": "tech_bbdd",
+      "name": "BBDD",
+      "parentId": "technology",
+      "color": "blue",
+      "level": 2,
+      "description": "Bases de datos PostgreSQL/Redis, replicación, backups y cloud serverless"
+    },
+    {
+      "id": "tech_legal",
+      "name": "LEGAL (TERMINOS Y COND.)",
+      "parentId": "technology",
+      "color": "blue",
+      "level": 2,
+      "description": "Marco normativo digital, términos de servicio, políticas de privacidad y datos"
+    },
+    {
+      "id": "tech_otp",
+      "name": "SMS OTP & KYC",
+      "parentId": "technology",
+      "color": "blue",
+      "level": 2,
+      "description": "Autenticación biométrica, verificación de identidad Didit y envío de SMS OTP"
+    },
+    {
+      "id": "tech_pagos",
+      "name": "$ (VERIF. DE PAGOS)",
+      "parentId": "technology",
+      "color": "blue",
+      "level": 2,
+      "description": "Conciliación bancaria automatizada, pago móvil y validación de transferencias"
+    },
+    {
+      "id": "tech_sofia",
+      "name": "SOFIA",
+      "parentId": "technology",
+      "color": "blue",
+      "level": 2,
+      "description": "Asistente de inteligencia artificial para soporte automatizado 24/7 y onboarding"
+    },
+    {
+      "id": "com_alianzas",
+      "name": "ALIANZAS",
+      "parentId": "commercial",
+      "color": "amber",
+      "level": 2,
+      "description": "Convenios corporativos, empresas B2B y acuerdos estratégicos de movilidad"
+    },
+    {
+      "id": "com_mkt",
+      "name": "PUBLICIDAD Y MERCADEO",
+      "parentId": "commercial",
+      "color": "amber",
+      "level": 2,
+      "description": "Campañas de adquisición, performance digital y activación de marca"
+    },
+    {
+      "id": "com_diseno",
+      "name": "DISEÑADOR GRAFICO",
+      "parentId": "com_mkt",
+      "color": "amber",
+      "level": 3,
+      "description": "Identidad corporativa, assets publicitarios, UI visual y cartelería de paradas"
+    },
+    {
+      "id": "com_audio",
+      "name": "AUDIOVISUAL",
+      "parentId": "com_mkt",
+      "color": "amber",
+      "level": 3,
+      "description": "Producción de videos testimoniales, reels, spots y fotografía de eventos"
+    },
+    {
+      "id": "com_embajador",
+      "name": "EMBAJADOR",
+      "parentId": "com_mkt",
+      "color": "amber",
+      "level": 3,
+      "description": "Líderes de opinión, embajadores de marca e influencers del sector movilidad"
+    },
+    {
+      "id": "com_community",
+      "name": "COMMUNITY",
+      "parentId": "com_mkt",
+      "color": "amber",
+      "level": 3,
+      "description": "Gestión de redes sociales, interacción con la comunidad y moderación"
+    },
+    {
+      "id": "com_rrhh",
+      "name": "ADMINISTRACIÓN/RRHH",
+      "parentId": "commercial",
+      "color": "amber",
+      "level": 2,
+      "description": "Gestión de talento humano, reclutamiento, nómina y clima organizacional"
+    },
+    {
+      "id": "com_contab",
+      "name": "CONTABILIDAD",
+      "parentId": "commercial",
+      "color": "amber",
+      "level": 2,
+      "description": "Control de ingresos, egresos, impuestos, estados financieros y balances"
+    },
+    {
+      "id": "com_mercantil",
+      "name": "MERCANTIL",
+      "parentId": "commercial",
+      "color": "amber",
+      "level": 2,
+      "description": "Estructuración societaria, actas de asamblea y registro mercantil de la empresa"
+    },
+    {
+      "id": "com_legal",
+      "name": "LEGAL",
+      "parentId": "commercial",
+      "color": "amber",
+      "level": 2,
+      "description": "Contratos comerciales, acuerdos de confidencialidad y blindaje legal general"
+    },
+    {
+      "id": "ops_verif_doc",
+      "name": "VERIFICACIÓN MANUAL DE DOCUMENTOS",
+      "parentId": "commercial",
+      "color": "amber",
+      "level": 2,
+      "description": "Revisión minuciosa de licencias, títulos de propiedad y antecedentes de choferes"
+    },
+    {
+      "id": "ops_atencion",
+      "name": "ATENCIÓN AL USUARIO",
+      "parentId": "commercial",
+      "color": "amber",
+      "level": 2,
+      "description": "Centro de soporte multicanal a pasajeros y conductores ante dudas o reclamos"
+    },
+    {
+      "id": "flota_motos",
+      "name": "MOTOS",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Padrón de conductores de 2 ruedas, dotación de chalecos y control de flota"
+    },
+    {
+      "id": "flota_carros",
+      "name": "CARROS",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Vehículos de 4 ruedas para traslados ejecutivos y de confort"
+    },
+    {
+      "id": "flota_lineas",
+      "name": "LINEAS",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Cooperativas y líneas de transporte organizadas integradas al sistema"
+    },
+    {
+      "id": "flota_jefes",
+      "name": "JEFES",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Jefes de parada, coordinadores de punto y enlace directo en la calle"
+    },
+    {
+      "id": "flota_intt",
+      "name": "INTT ALCALDIA",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Permisología de transporte, homologación de paradas y relaciones institucionales"
+    },
+    {
+      "id": "flota_sindicato",
+      "name": "SINDICATO (RESOLUC. CONFLICTOS)",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Mediación gremial, acuerdos de convivencia y resolución de disputas de sector"
+    },
+    {
+      "id": "flota_promotoras",
+      "name": "PROMOTORAS",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Equipo de calle para captación, registro e instalación de la app en conductores"
+    },
+    {
+      "id": "flota_taller",
+      "name": "TALLER DE FORMACIÓN",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Capacitación en seguridad vial, uso de la app y protocolo de atención al cliente"
+    },
+    {
+      "id": "flota_inspeccion",
+      "name": "INSPECCIÓN DE RENOVACIÓN DE VEHICULO",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Chequeo técnico-mecánico periódico y verificación de estado de las unidades"
+    },
+    {
+      "id": "flota_inscrip",
+      "name": "INSCRIPCIONES",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Recepción presencial de conductores, toma de fotografía y entrega de credenciales"
+    },
+    {
+      "id": "flota_recargas",
+      "name": "RECARGAS",
+      "parentId": "operations",
+      "color": "emerald",
+      "level": 2,
+      "description": "Puntos y métodos de recarga de saldo prepagado para choferes de la aplicación"
+    }
+  ],
+  "departmentConnections": [
+    {
+      "id": "conn-legal",
+      "fromId": "tech_legal",
+      "toId": "com_legal",
+      "label": "Marco Legal Digital & Contratos",
+      "type": "cross_functional",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "conn-kyc-doc",
+      "fromId": "tech_otp",
+      "toId": "ops_verif_doc",
+      "label": "Validación KYC Biometría Didit",
+      "type": "cross_functional",
+      "color": "#0078d4"
+    },
+    {
+      "id": "conn-doc-inscrip",
+      "fromId": "ops_verif_doc",
+      "toId": "flota_inscrip",
+      "label": "Aprobación & Registro de Choferes",
+      "type": "cross_functional",
+      "color": "#10b981"
+    },
+    {
+      "id": "conn-pagos-atencion",
+      "fromId": "tech_pagos",
+      "toId": "ops_atencion",
+      "label": "Conciliación Bancaria y Reclamos",
+      "type": "cross_functional",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "conn-atencion-recargas",
+      "fromId": "ops_atencion",
+      "toId": "flota_recargas",
+      "label": "Gestión de Saldo & Puntos de Recarga",
+      "type": "cross_functional",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "conn-sofia-atencion",
+      "fromId": "tech_sofia",
+      "toId": "ops_atencion",
+      "label": "Asistente Virtual IA & Escalamiento Tickets",
+      "type": "cross_functional",
+      "color": "#ec4899"
+    }
+  ],
+  "businessModelBlocks": [
+    {
+      "id": "bm-estacionamiento",
+      "title": "ESTACIONAMIENTO",
+      "subtitle": "Necesidad",
+      "category": "needs",
+      "color": "blue",
+      "description": "Déficit crítico de espacios seguros para aparcar motos y vehículos en zonas comerciales y bancarias.",
+      "targetAudience": "Conductores y Motorizados",
+      "status": "active",
+      "order": 1
+    },
+    {
+      "id": "bm-movilidad",
+      "title": "MOVILIDAD",
+      "subtitle": "Necesidad",
+      "category": "needs",
+      "color": "blue",
+      "description": "Demanda insatisfecha de traslados urbanos rápidos, económicos y en tiempo real.",
+      "targetAudience": "Pasajeros Urbanos",
+      "status": "active",
+      "order": 2
+    },
+    {
+      "id": "bm-envios",
+      "title": "ENVIOS",
+      "subtitle": "Necesidad",
+      "category": "needs",
+      "color": "blue",
+      "description": "Logística express de última milla para comercios, farmacias, repuestos y particulares.",
+      "targetAudience": "Comercios & Particulares",
+      "status": "active",
+      "order": 3
+    },
+    {
+      "id": "bm-financiamiento",
+      "title": "FINANCIAMIENTO",
+      "subtitle": "Necesidad",
+      "category": "needs",
+      "color": "blue",
+      "description": "Acceso a crédito accesible para renovación de unidades, repuestos y motos de trabajo.",
+      "targetAudience": "Flota de Conductores",
+      "status": "pilot",
+      "order": 4
+    },
+    {
+      "id": "bm-mecanica",
+      "title": "MECANICA",
+      "subtitle": "Necesidad",
+      "category": "needs",
+      "color": "blue",
+      "description": "Mantenimiento preventivo rápido, diagnósticos confiables y repuestos certificados.",
+      "targetAudience": "Conductores y Propietarios",
+      "status": "pilot",
+      "order": 5
+    },
+    {
+      "id": "bm-publicidad",
+      "title": "PUBLICIDAD",
+      "subtitle": "Canal & Monetización",
+      "category": "marketing",
+      "color": "amber",
+      "isVerticalBanner": true,
+      "description": "Publicidad en app, patrocinio de paradas físicas, chalecos y branding en vehículos.",
+      "targetAudience": "Marcas y Empresas B2B",
+      "status": "active",
+      "order": 1
+    },
+    {
+      "id": "bm-orden-vial",
+      "title": "ORDEN PUBLICO VIAL",
+      "subtitle": "MÁS SOLUCIÓN MENOS PROBLEMAS",
+      "category": "core_header",
+      "color": "slate",
+      "description": "Organización integral del tránsito, formalización de paradas y convivencia ciudadana.",
+      "status": "active",
+      "order": 1
+    },
+    {
+      "id": "bm-talleres-formacion",
+      "title": "Talleres de formacion Vial",
+      "subtitle": "Formación",
+      "category": "core_sub",
+      "color": "emerald",
+      "description": "Capacitación obligatoria en seguridad vial, manejo defensivo y trato al pasajero.",
+      "status": "active",
+      "order": 1
+    },
+    {
+      "id": "bm-paradas-oficiales",
+      "title": "Paradas y Estacionamientos OFICIALES",
+      "subtitle": "Infraestructura",
+      "category": "core_sub",
+      "color": "cyan",
+      "description": "Puntos autorizados por alcaldías e INTT con seguridad, demarcación y custodia.",
+      "linkedRevenueStreamId": "stream-parking",
+      "priceEstimated": 10,
+      "status": "active",
+      "order": 2
+    },
+    {
+      "id": "bm-motos",
+      "title": "MOTOS",
+      "subtitle": "Flota 2 Ruedas Principal",
+      "category": "core_vehicles",
+      "color": "blue",
+      "isThickBorder": true,
+      "description": "Columna vertebral de transporte rápido, moto-taxi, delivery y micro-movilidad.",
+      "linkedRevenueStreamId": "stream-conductores",
+      "priceEstimated": 10,
+      "status": "active",
+      "order": 1
+    },
+    {
+      "id": "bm-carros",
+      "title": "CARROS",
+      "subtitle": "Flota 4 Ruedas & Confort",
+      "category": "core_vehicles",
+      "color": "indigo",
+      "isThickBorder": true,
+      "description": "Vehículos para traslados ejecutivos, familiares, lluvia y mayor capacidad.",
+      "status": "expansion",
+      "order": 2
+    },
+    {
+      "id": "bm-traslados-envios",
+      "title": "Traslados y Envíos",
+      "subtitle": "Conductores",
+      "category": "core_transfers",
+      "color": "purple",
+      "description": "Despacho automatizado mediante la aplicación con tarifas dinámicas y comisiones justas.",
+      "linkedRevenueStreamId": "stream-carreras",
+      "priceEstimated": 3,
+      "status": "active",
+      "order": 1
+    },
+    {
+      "id": "bm-taller-mecanico",
+      "title": "Taller mecanico",
+      "subtitle": "Servicio & Repuestos",
+      "category": "core_footer",
+      "color": "rose",
+      "description": "Red de talleres aliados para chequeo técnico periódico, frenos, aceite y cauchos.",
+      "status": "pilot",
+      "order": 1
+    },
+    {
+      "id": "bm-financiamiento-motos",
+      "title": "Financiamiento motos",
+      "subtitle": "Crédito y Adquisición",
+      "category": "core_footer",
+      "color": "amber",
+      "description": "Planes de financiamiento y facilidades de pago para motorizados de alto rendimiento.",
+      "status": "pilot",
+      "order": 2
+    },
+    {
+      "id": "bm-caracas-nacional",
+      "title": "CARACAS - NACIONAL",
+      "subtitle": "Despliegue & Expansión",
+      "category": "coverage",
+      "color": "emerald",
+      "isVerticalBanner": true,
+      "description": "Fase 1 en Gran Caracas con escalamiento progresivo a las principales ciudades del país.",
+      "status": "expansion",
+      "order": 1
+    }
+  ],
+  "businessModelConnections": [
+    {
+      "id": "bmc-1",
+      "fromId": "bm-estacionamiento",
+      "toId": "bm-paradas-oficiales",
+      "label": "Solución Parking"
+    },
+    {
+      "id": "bmc-2",
+      "fromId": "bm-movilidad",
+      "toId": "bm-motos",
+      "label": "Flota 2R"
+    },
+    {
+      "id": "bmc-3",
+      "fromId": "bm-movilidad",
+      "toId": "bm-carros",
+      "label": "Flota 4R"
+    },
+    {
+      "id": "bmc-4",
+      "fromId": "bm-envios",
+      "toId": "bm-traslados-envios",
+      "label": "Logística Express"
+    },
+    {
+      "id": "bmc-5",
+      "fromId": "bm-financiamiento",
+      "toId": "bm-financiamiento-motos",
+      "label": "Crédito Adquisición"
+    },
+    {
+      "id": "bmc-6",
+      "fromId": "bm-mecanica",
+      "toId": "bm-taller-mecanico",
+      "label": "Soporte Mecánico"
+    },
+    {
+      "id": "bmc-7",
+      "fromId": "bm-talleres-formacion",
+      "toId": "bm-motos",
+      "label": "Capacitación"
+    },
+    {
+      "id": "bmc-8",
+      "fromId": "bm-motos",
+      "toId": "bm-traslados-envios",
+      "label": "Operación Diaria"
+    },
+    {
+      "id": "bmc-9",
+      "fromId": "bm-carros",
+      "toId": "bm-traslados-envios",
+      "label": "Servicio Confort"
+    },
+    {
+      "id": "bmc-10",
+      "fromId": "bm-publicidad",
+      "toId": "bm-orden-vial",
+      "label": "Monetización & Ads"
+    },
+    {
+      "id": "bmc-11",
+      "fromId": "bm-orden-vial",
+      "toId": "bm-caracas-nacional",
+      "label": "Cobertura"
+    }
+  ],
+  "actionPlanItems": [
+    {
+      "id": "ap-1",
+      "title": "Constitución Mercantil & Registro de Marca",
+      "description": "Redacción de estatutos societarios, actas de asamblea, registro mercantil ante SAPI y blindaje legal de la marca VELOX.",
+      "phase": "T1",
+      "status": "completed",
+      "assignedTo": "Yonaiker Marcano",
+      "department": "commercial",
+      "targetMonth": 1,
+      "budgetAllocated": 1500,
+      "deliverable": "Documento de Registro Mercantil y Certificado SAPI"
+    },
+    {
+      "id": "ap-2",
+      "title": "Desarrollo MVP App Conductor & Pasajero",
+      "description": "Creación de interfaces nativas en Flutter/React Native, sockets en tiempo real y despacho de carreras.",
+      "phase": "T1",
+      "status": "in_progress",
+      "assignedTo": "Héctor Samuel",
+      "department": "technology",
+      "targetMonth": 3,
+      "budgetAllocated": 4800,
+      "deliverable": "Builds funcionales APK y TestFlight en staging"
+    },
+    {
+      "id": "ap-3",
+      "title": "Infraestructura Cloud, VPS & Ciberseguridad",
+      "description": "Configuración de servidores VPS NGINX, balanceador, base de datos PostgreSQL, Redis y reglas de blindaje.",
+      "phase": "T1",
+      "status": "completed",
+      "assignedTo": "Héctor Samuel",
+      "department": "technology",
+      "targetMonth": 2,
+      "budgetAllocated": 1500,
+      "deliverable": "Servidores en producción con SSL y monitoreo 24/7"
+    },
+    {
+      "id": "ap-4",
+      "title": "Integración Didit KYC & Asistente IA Sofia",
+      "description": "Verificación biométrica facial por OCR para conductores y agente Sofia en Google Cloud Gemini para onboarding automático.",
+      "phase": "T1",
+      "status": "completed",
+      "assignedTo": "Héctor Samuel",
+      "department": "technology",
+      "targetMonth": 3,
+      "budgetAllocated": 600,
+      "deliverable": "Flujo de registro y validación biométrica en menos de 2 minutos"
+    },
+    {
+      "id": "ap-5",
+      "title": "Homologación de Paradas Oficiales con INTT y Alcaldía",
+      "description": "Acuerdos institucionales para paradas y estacionamientos oficiales en Chacao y Municipio Libertador.",
+      "phase": "T2",
+      "status": "in_progress",
+      "assignedTo": "Bladimir García",
+      "department": "operations",
+      "targetMonth": 4,
+      "budgetAllocated": 1200,
+      "deliverable": "Permisología formal y delimitación de las primeras 10 paradas homologadas"
+    },
+    {
+      "id": "ap-6",
+      "title": "Producción de 500 Chalecos Oficiales Reglamentarios",
+      "description": "Confección de chalecos reflectivos con logotipo VELOX, número de identificación de unidad y código QR de seguridad.",
+      "phase": "T2",
+      "status": "todo",
+      "assignedTo": "Bladimir García",
+      "department": "operations",
+      "targetMonth": 4,
+      "budgetAllocated": 5000,
+      "deliverable": "Lote de 500 chalecos reglamentarios listos para entrega"
+    },
+    {
+      "id": "ap-7",
+      "title": "Campaña de Chupetas Publicitarias en Paradas",
+      "description": "Instalación de cartelería y chupetas publicitarias físicas en los puntos de parada oficial con QR para pasajeros y conductores.",
+      "phase": "T2",
+      "status": "todo",
+      "assignedTo": "Yonaiker Marcano",
+      "department": "commercial",
+      "targetMonth": 5,
+      "budgetAllocated": 2500,
+      "deliverable": "10 chupetas instaladas en avenidas principales de Caracas"
+    },
+    {
+      "id": "ap-8",
+      "title": "Activación de Stands con Promotoras & Afiliación Masiva",
+      "description": "Despliegue de equipo de promotoras en paradas clave para registro asistido, foto y entrega de credencial a 500 motorizados.",
+      "phase": "T2",
+      "status": "todo",
+      "assignedTo": "Yonaiker Marcano",
+      "department": "commercial",
+      "targetMonth": 5,
+      "budgetAllocated": 1800,
+      "deliverable": "500 motorizados verificados y activos en el padrón"
+    },
+    {
+      "id": "ap-9",
+      "title": "Lanzamiento Oficial del Servicio de Carreras en App",
+      "description": "Apertura al público general de viajes en dos ruedas y cobro de comisión de $3 por carrera despachada.",
+      "phase": "T3",
+      "status": "todo",
+      "assignedTo": "Héctor Samuel",
+      "department": "technology",
+      "targetMonth": 7,
+      "budgetAllocated": 1000,
+      "deliverable": "App disponible en Google Play Store y Apple App Store"
+    },
+    {
+      "id": "ap-10",
+      "title": "Monetización Recurrente de Estacionamientos Oficiales",
+      "description": "Cobro mensual de abono de $10/mes a los motorizados para uso exclusivo y resguardado de paradas homologadas.",
+      "phase": "T3",
+      "status": "todo",
+      "assignedTo": "Bladimir García",
+      "department": "operations",
+      "targetMonth": 7,
+      "budgetAllocated": 500,
+      "deliverable": "Recaudación mensual recurrente automatizada por Pago Móvil"
+    },
+    {
+      "id": "ap-11",
+      "title": "Alcanzar el Punto de Equilibrio Operativo (Breakeven)",
+      "description": "Generar ingresos superiores a $12,000/mes para cubrir 100% de nómina y costos fijos sin quemar capital de inversión.",
+      "phase": "T3",
+      "status": "todo",
+      "assignedTo": "Yonaiker Marcano",
+      "department": "commercial",
+      "targetMonth": 7,
+      "budgetAllocated": 0,
+      "deliverable": "Flujo de caja mensual neto positivo auditado"
+    },
+    {
+      "id": "ap-12",
+      "title": "Alianzas con Talleres Mecánicos & Descuentos en Repuestos",
+      "description": "Red de talleres aliados que ofrecen mantenimiento preventivo y repuestos a precios preferenciales para motorizados afiliados.",
+      "phase": "T4",
+      "status": "todo",
+      "assignedTo": "Bladimir García",
+      "department": "operations",
+      "targetMonth": 10,
+      "budgetAllocated": 800,
+      "deliverable": "3 talleres mecánicos afiliados en Caracas con lista de precios oficial"
+    },
+    {
+      "id": "ap-13",
+      "title": "Programa Piloto de Financiamiento de Motos y Baterías",
+      "description": "Esquema de microcréditos con cooperativas financieras para renovación de flotas y compra de repuestos mayores.",
+      "phase": "T4",
+      "status": "todo",
+      "assignedTo": "Yonaiker Marcano",
+      "department": "commercial",
+      "targetMonth": 11,
+      "budgetAllocated": 1500,
+      "deliverable": "Convenio firmado con entidad de financiamiento"
+    },
+    {
+      "id": "ap-14",
+      "title": "Talleres de Formación y Certificación en Seguridad Vial",
+      "description": "Academia obligatoria de inducción, primeros auxilios viales y protocolo de atención al pasajero para obtener el chaleco VELOX.",
+      "phase": "T4",
+      "status": "todo",
+      "assignedTo": "Bladimir García",
+      "department": "operations",
+      "targetMonth": 10,
+      "budgetAllocated": 1200,
+      "deliverable": "Aula de formación activa y certificación física/digital de conductores"
+    },
+    {
+      "id": "ap-15",
+      "title": "Estructuración para Expansión Nacional (Valencia & Maracaibo)",
+      "description": "Levantamiento de campo y contacto con líneas de mototaxis en Valencia y Maracaibo para replicar el modelo probado de Caracas.",
+      "phase": "T4",
+      "status": "todo",
+      "assignedTo": "Yonaiker Marcano",
+      "department": "commercial",
+      "targetMonth": 12,
+      "budgetAllocated": 2000,
+      "deliverable": "Plan de expansión regional y padrón preliminar de 300 unidades fuera de Caracas"
+    }
+  ],
+  "revenueStreams": [
+    {
+      "id": "stream-conductores",
+      "name": "Inscripción y Onboarding de Conductores",
+      "type": "unit_sales",
+      "pricePerUnit": 10,
+      "initialUnits": 500,
+      "monthlyGrowthRatePct": 15,
+      "directCostPerUnit": 0.15,
+      "paymentGatewayFeePct": 0,
+      "category": "Flota & Afiliación",
+      "activeFromMonth": 4,
+      "notes": "Tarifa única de inscripción para motorizados. 500 en M4-M6, 1000 en M7-M12.",
+      "monthlyUnitsOverride": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 500,
+        "5": 500,
+        "6": 500,
+        "7": 1000,
+        "8": 1000,
+        "9": 1000,
+        "10": 1000,
+        "11": 1000,
+        "12": 1000
+      }
+    },
+    {
+      "id": "stream-parking",
+      "name": "Red Oficial de Estacionamiento de Motos",
+      "type": "subscription",
+      "pricePerUnit": 10,
+      "initialUnits": 100,
+      "monthlyGrowthRatePct": 20,
+      "directCostPerUnit": 0,
+      "paymentGatewayFeePct": 0,
+      "category": "Infraestructura & Alianzas",
+      "activeFromMonth": 4,
+      "notes": "Abono mensual recurrente por moto en paradas oficiales homologadas.",
+      "monthlyUnitsOverride": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 200,
+        "8": 200,
+        "9": 200,
+        "10": 400,
+        "11": 400,
+        "12": 400
+      }
+    },
+    {
+      "id": "stream-carreras",
+      "name": "Carreras de Movilidad / Viajes en App",
+      "type": "commission_gmv",
+      "pricePerUnit": 3,
+      "initialUnits": 10,
+      "monthlyGrowthRatePct": 25,
+      "directCostPerUnit": 0.02,
+      "paymentGatewayFeePct": 0,
+      "category": "Pasajeros & Viajes",
+      "activeFromMonth": 7,
+      "notes": "Comisión promedio por servicio de transporte en moto.",
+      "monthlyUnitsOverride": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 10,
+        "8": 20,
+        "9": 30,
+        "10": 40,
+        "11": 50,
+        "12": 60
+      }
+    }
+  ],
+  "directCosts": [
+    {
+      "id": "cogs-kyc",
+      "name": "Verificación Facial & Biometría Didit KYC",
+      "category": "api_cloud",
+      "costPerUnit": 0.15,
+      "unitName": "conductor verificado",
+      "linkedStreamId": "stream-conductores",
+      "notes": "OCR de cédula, licencia y reconocimiento facial en onboarding"
+    },
+    {
+      "id": "cogs-maps-gps",
+      "name": "Google Maps API (Directions & Geocoding)",
+      "category": "api_cloud",
+      "costPerUnit": 0.015,
+      "unitName": "carrera despachada",
+      "linkedStreamId": "stream-carreras",
+      "notes": "Cálculo de rutas óptimas y tarifa en tiempo real"
+    },
+    {
+      "id": "cogs-sms-otp",
+      "name": "WhatsApp Business OTP & SMS Seguro",
+      "category": "api_cloud",
+      "costPerUnit": 0.035,
+      "unitName": "código de validación",
+      "notes": "Envío de token de inicio de sesión"
+    }
+  ],
+  "employees": [
+    {
+      "id": "emp-hector",
+      "name": "Hector Samuel",
+      "role": "Director de Tecnología (CTO)",
+      "department": "technology",
+      "type": "director",
+      "baseSalaryMonthly": 1000,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 1,
+      "notes": "Arquitectura, liderazgo de producto digital e infraestructura de nube"
+    },
+    {
+      "id": "emp-lead-dev",
+      "name": "Desarrollador Lead (Web & Mobile)",
+      "role": "Fullstack Lead Developer",
+      "department": "technology",
+      "type": "full_time",
+      "baseSalaryMonthly": 800,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 2,
+      "notes": "Desarrollo de App Conductor, App Pasajero y Panel Web"
+    },
+    {
+      "id": "emp-qa-tester",
+      "name": "Control de Calidad (Tester QA)",
+      "role": "QA Engineer",
+      "department": "technology",
+      "type": "full_time",
+      "baseSalaryMonthly": 600,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 2,
+      "notes": "Pruebas de estrés, trazabilidad y control de bugs"
+    },
+    {
+      "id": "emp-ui-ux",
+      "name": "Diseñador Gráfico & UI/UX",
+      "role": "Product Designer",
+      "department": "technology",
+      "type": "full_time",
+      "baseSalaryMonthly": 600,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 2,
+      "notes": "Diseño de interfaces móviles, branding y experiencia del usuario"
+    },
+    {
+      "id": "emp-ciberseguridad",
+      "name": "Auditor de Ciberseguridad",
+      "role": "Security Specialist",
+      "department": "technology",
+      "type": "one_time",
+      "baseSalaryMonthly": 2000,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 4,
+      "endMonth": 4,
+      "isOneTime": true,
+      "notes": "Auditoría externa de penetración y blindaje de base de datos"
+    },
+    {
+      "id": "emp-soporte",
+      "name": "Atención al Usuario & Soporte",
+      "role": "Helpdesk & Driver Support",
+      "department": "technology",
+      "type": "full_time",
+      "baseSalaryMonthly": 300,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 4,
+      "notes": "Atención de incidencias de conductores y clientes"
+    },
+    {
+      "id": "emp-yonaiker",
+      "name": "Yonaiker Marcano",
+      "role": "Director Comercial & Alianzas",
+      "department": "commercial",
+      "type": "director",
+      "baseSalaryMonthly": 1000,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 1,
+      "notes": "Estrategia comercial, alianzas B2B, marketing y crecimiento de negocio"
+    },
+    {
+      "id": "emp-asist-admin",
+      "name": "Asistente Administrativo / RRHH",
+      "role": "Administración & Gestión",
+      "department": "commercial",
+      "type": "full_time",
+      "baseSalaryMonthly": 400,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 1,
+      "notes": "Control documental, pagos y recepción"
+    },
+    {
+      "id": "emp-bladimir",
+      "name": "Bladimir Garcia",
+      "role": "Director Institucional & Flota",
+      "department": "operations",
+      "type": "director",
+      "baseSalaryMonthly": 1000,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 1,
+      "notes": "Relaciones gremiales, INTT, Alcaldía, cooperativas y orden de flota"
+    },
+    {
+      "id": "emp-asist-op",
+      "name": "Asistente de Operaciones",
+      "role": "Coordinador de Terreno",
+      "department": "operations",
+      "type": "full_time",
+      "baseSalaryMonthly": 300,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 1,
+      "notes": "Supervisión de paradas y asistencia de motorizados"
+    },
+    {
+      "id": "emp-chofer-op",
+      "name": "Motorizado Chofer Operativo",
+      "role": "Operador de Enlace en Calle",
+      "department": "operations",
+      "type": "full_time",
+      "baseSalaryMonthly": 400,
+      "socialBenefitsPct": 0,
+      "activeFromMonth": 1,
+      "notes": "Movilización operativa y logística en Caracas"
+    }
+  ],
+  "opexExpenses": [
+    {
+      "id": "opex-vps",
+      "name": "Servidor VPS Alta Disponibilidad",
+      "category": "software_cloud",
+      "monthlyCost": 500,
+      "frequency": "monthly",
+      "activeFromMonth": 1,
+      "notes": "Backend Node.js, balanceador NGINX y base de datos"
+    },
+    {
+      "id": "opex-ai-gemini",
+      "name": "Google Cloud & Gemini Pro AI",
+      "category": "software_cloud",
+      "monthlyCost": 20,
+      "frequency": "monthly",
+      "activeFromMonth": 1,
+      "notes": "Atención inteligente automatizada a usuarios y motorizados"
+    },
+    {
+      "id": "opex-firebase",
+      "name": "Firebase Cloud Firestore & Auth",
+      "category": "software_cloud",
+      "monthlyCost": 5,
+      "frequency": "monthly",
+      "activeFromMonth": 4,
+      "notes": "Base de datos en tiempo real y autenticación"
+    },
+    {
+      "id": "opex-maps-fixed",
+      "name": "Google Maps Base Platform",
+      "category": "software_cloud",
+      "monthlyCost": 20,
+      "frequency": "monthly",
+      "activeFromMonth": 3,
+      "monthlyAmountOverride": {
+        "3": 20,
+        "4": 20,
+        "5": 20,
+        "6": 20,
+        "7": 40,
+        "8": 40,
+        "9": 40,
+        "10": 50,
+        "11": 50,
+        "12": 50
+      },
+      "notes": "Licencia base y cuotas mínimas de Google Maps Platform"
+    },
+    {
+      "id": "opex-marketing-ads",
+      "name": "Publicidad Digital (Meta Ads & Google)",
+      "category": "marketing_ads",
+      "monthlyCost": 50,
+      "frequency": "monthly",
+      "activeFromMonth": 1,
+      "monthlyAmountOverride": {
+        "1": 50,
+        "2": 50,
+        "3": 50,
+        "4": 150,
+        "5": 150,
+        "6": 150,
+        "7": 200,
+        "8": 200,
+        "9": 200,
+        "10": 200,
+        "11": 200,
+        "12": 200
+      },
+      "notes": "Captación de conductores y promoción de viajes"
+    },
+    {
+      "id": "opex-marketing-promo",
+      "name": "Cupones y Chupetas Publicitarias",
+      "category": "marketing_ads",
+      "monthlyCost": 0,
+      "frequency": "monthly",
+      "activeFromMonth": 4,
+      "monthlyAmountOverride": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 360,
+        "5": 360,
+        "6": 360,
+        "7": 420,
+        "8": 420,
+        "9": 420,
+        "10": 480,
+        "11": 480,
+        "12": 480
+      },
+      "notes": "Incentivos de lanzamiento y señalización en paradas"
+    },
+    {
+      "id": "opex-chalecos-dotacion",
+      "name": "Dotación de Chalecos Oficiales a Conductores",
+      "category": "marketing_ads",
+      "monthlyCost": 0,
+      "frequency": "one_time",
+      "activeFromMonth": 4,
+      "monthlyAmountOverride": {
+        "4": 1500,
+        "5": 1500,
+        "6": 1500,
+        "7": 3000,
+        "8": 3000,
+        "9": 3000,
+        "10": 3000,
+        "11": 3000,
+        "12": 3000
+      },
+      "notes": "Indumentaria reglamentaria y presencia de marca en la calle"
+    },
+    {
+      "id": "opex-sede-oficina",
+      "name": "Alquiler Sede Física Corporativa Caracas",
+      "category": "rent",
+      "monthlyCost": 1200,
+      "frequency": "monthly",
+      "activeFromMonth": 10,
+      "notes": "Oficina principal activada en Fase 4 de consolidación"
+    },
+    {
+      "id": "opex-suministros",
+      "name": "Café, Papelería y Suministros Operativos",
+      "category": "office",
+      "monthlyCost": 50,
+      "frequency": "monthly",
+      "activeFromMonth": 1,
+      "notes": "Gastos menores de operación de campo"
+    },
+    {
+      "id": "opex-legal-tramites",
+      "name": "Permisología Alcaldía & SAREM",
+      "category": "legal_accounting",
+      "monthlyCost": 0,
+      "frequency": "one_time",
+      "activeFromMonth": 1,
+      "monthlyAmountOverride": {
+        "1": 300,
+        "2": 60,
+        "3": 60
+      },
+      "notes": "Registro mercantil y homologación inicial de paradas"
+    },
+    {
+      "id": "opex-telefonia",
+      "name": "Línea Telefónica Corporativa",
+      "category": "utilities",
+      "monthlyCost": 10,
+      "frequency": "monthly",
+      "activeFromMonth": 1,
+      "notes": "Línea móvil de atención y datos para operaciones"
+    }
+  ],
+  "capexInvestments": [
+    {
+      "id": "capex-laptops-mac",
+      "name": "MacBook Pro M3 (Desarrollo Lead)",
+      "category": "hardware",
+      "totalCost": 2000,
+      "monthSpent": 1,
+      "depreciationMonths": 36,
+      "notes": "Equipo principal para compilación y desarrollo iOS/Android"
+    },
+    {
+      "id": "capex-laptops-soporte",
+      "name": "2 Laptops de Soporte & Operaciones",
+      "category": "hardware",
+      "totalCost": 1600,
+      "monthSpent": 1,
+      "depreciationMonths": 36,
+      "notes": "Equipos para administración y monitoreo de flota"
+    },
+    {
+      "id": "capex-telefono",
+      "name": "Teléfono Móvil Corporativo",
+      "category": "hardware",
+      "totalCost": 150,
+      "monthSpent": 1,
+      "depreciationMonths": 24,
+      "notes": "Dispositivo para pruebas en terreno y canal WhatsApp"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "ven-google",
+      "name": "Google Cloud Platform (GCP)",
+      "category": "Infraestructura Cloud & Maps",
+      "paymentTermsDays": 30,
+      "contact": "cloud.google.com",
+      "notes": "Facturación mensual automática por tarjeta de crédito"
+    },
+    {
+      "id": "ven-didit",
+      "name": "Didit KYC Biometrics",
+      "category": "Seguridad & Autenticación",
+      "paymentTermsDays": 15,
+      "contact": "support@didit.me",
+      "notes": "Tarifa prepagada por paquetes de validación de identidad"
+    },
+    {
+      "id": "ven-chalecos",
+      "name": "Confecciones Textiles Caracas",
+      "category": "Merchandising & Dotación",
+      "paymentTermsDays": 15,
+      "contact": "ventas@confeccionesccs.com",
+      "notes": "Chalecos reflectivos con serigrafía oficial de VELOX"
+    },
+    {
+      "id": "ven-inmobiliaria",
+      "name": "Inmobiliaria Corporativa Caracas",
+      "category": "Alquiler Inmueble",
+      "paymentTermsDays": 0,
+      "contact": "admin@inmobiliariaccs.com",
+      "notes": "Pago mensual por adelantado de oficinas"
+    }
+  ],
+  "actualRecords": [
+    {
+      "month": 1,
+      "year": 2026,
+      "monthName": "Enero",
+      "realRevenue": 0,
+      "realCogs": 0,
+      "realPayroll": 4100,
+      "realOpex": 935,
+      "realCapex": 3750,
+      "notes": "Setup inicial de desarrollo y adquisición de hardware"
+    },
+    {
+      "month": 2,
+      "year": 2026,
+      "monthName": "Febrero",
+      "realRevenue": 0,
+      "realCogs": 0,
+      "realPayroll": 6100,
+      "realOpex": 683.5,
+      "realCapex": 0,
+      "notes": "Incorporación del equipo técnico de desarrollo, QA y UI/UX"
+    },
+    {
+      "month": 3,
+      "year": 2026,
+      "monthName": "Marzo",
+      "realRevenue": 0,
+      "realCogs": 0,
+      "realPayroll": 6100,
+      "realOpex": 703.5,
+      "realCapex": 0,
+      "notes": "Finalización del MVP y preparación para la prueba piloto"
+    }
+  ],
+  "marketingCampaigns": [
+    {
+      "id": "camp-meta-1",
+      "name": "Meta Ads — Captación Motorizados T2",
+      "channel": "meta_ads",
+      "budgetTotal": 450,
+      "startMonth": 4,
+      "durationMonths": 3,
+      "objective": "conductores",
+      "expectedUnits": 150,
+      "notes": "Campaña de adquisición masiva de conductores en Facebook e Instagram"
+    },
+    {
+      "id": "camp-chupetas-1",
+      "name": "Chupetas & Señalización en Paradas",
+      "channel": "ooh",
+      "budgetTotal": 2500,
+      "startMonth": 5,
+      "durationMonths": 1,
+      "objective": "awareness",
+      "expectedUnits": 10,
+      "notes": "10 chupetas instaladas en avenidas principales de Caracas"
+    },
+    {
+      "id": "camp-promotoras-1",
+      "name": "Stands con Promotoras — Afiliación Masiva",
+      "channel": "field_marketing",
+      "budgetTotal": 1800,
+      "startMonth": 5,
+      "durationMonths": 1,
+      "objective": "conductores",
+      "expectedUnits": 500,
+      "notes": "Despliegue de promotoras en paradas clave para registro asistido"
+    }
+  ],
+  "githubConfig": {
+    "token": "",
+    "repo": "",
+    "owner": "",
+    "branch": "main",
+    "filePath": "data/business_data.json",
+    "autoSync": false
+  }
+}
