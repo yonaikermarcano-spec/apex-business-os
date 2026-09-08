@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html, body, #root { height: 100%; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+    background-color: #181818;
+    color: #e8e8e8;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
+  ::selection { background: #0078d4; color: white; }
+}
+
+@layer components {
+  /* Acrylic effect — Windows 11 glass panels */
+  .acrylic {
+    background: rgba(32,32,32,0.85);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* Mica effect — deeper blur for sidebars/modals */
+  .mica {
+    background: rgba(24,24,24,0.92);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* W11 Card */
+  .w11-card {
+    @apply bg-w11-card rounded-w11 border border-w11-border;
+  }
+
+  /* W11 Button styles */
+  .btn-accent {
+    @apply bg-w11-accent hover:bg-w11-accent-hover text-white text-sm font-medium
+           px-4 py-1.5 rounded-w11 transition-all duration-150 flex items-center gap-1.5;
+  }
+  .btn-ghost {
+    @apply bg-transparent hover:bg-white/10 text-w11-text text-sm font-medium
+           px-3 py-1.5 rounded-w11 transition-all duration-150 border border-transparent
+           hover:border-w11-border flex items-center gap-1.5;
+  }
+  .btn-subtle {
+    @apply bg-white/5 hover:bg-white/10 text-w11-text text-sm
+           px-3 py-1.5 rounded-w11 transition-all duration-150 flex items-center gap-1.5;
+  }
+
+  /* W11 Input */
+  .w11-input {
+    @apply bg-white/5 border border-w11-border rounded-w11 px-3 py-1.5 text-sm
+           text-w11-text placeholder-w11-text-dim focus:outline-none focus:border-w11-accent
+           focus:ring-1 focus:ring-w11-accent/40 transition-all duration-150;
+  }
+
+  /* Status chips */
+  .chip-completed { @apply bg-green-900/40 text-green-400 text-xs px-2 py-0.5 rounded-full; }
+  .chip-progress  { @apply bg-blue-900/40 text-blue-400 text-xs px-2 py-0.5 rounded-full; }
+  .chip-todo      { @apply bg-white/10 text-w11-text-muted text-xs px-2 py-0.5 rounded-full; }
+  .chip-danger    { @apply bg-red-900/40 text-red-400 text-xs px-2 py-0.5 rounded-full; }
+  .chip-warning   { @apply bg-amber-900/40 text-amber-400 text-xs px-2 py-0.5 rounded-full; }
+
+  /* KPI card highlight */
+  .kpi-value { @apply text-2xl font-bold text-w11-text leading-none; }
+  .kpi-label { @apply text-xs text-w11-text-muted mt-1; }
+
+  /* Module content area */
+  .module-content {
+    @apply h-full overflow-y-auto p-4 md:p-6 space-y-4;
+  }
+
+  /* Table styles */
+  .w11-table {
+    @apply w-full text-sm;
+  }
+  .w11-table th {
+    @apply text-left text-w11-text-muted text-xs font-medium py-2 px-3 border-b border-w11-border;
+  }
+  .w11-table td {
+    @apply py-2 px-3 border-b border-white/5 text-w11-text;
+  }
+  .w11-table tr:hover td {
+    @apply bg-white/5;
+  }
+}
+
+/* Snap layout */
+.snap-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  height: 100%;
+}
+
+/* Mobile-first adjustments */
+@media (max-width: 768px) {
+  body { overflow: auto; }
+  .module-content { padding: 12px; }
+}
